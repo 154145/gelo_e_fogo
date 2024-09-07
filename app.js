@@ -7,7 +7,7 @@ function pesquisar() {
     campoPesquisa = campoPesquisa.toLowerCase();
 
     if(campoPesquisa ==""){
-      section.innerHTML = "<p>Nada foi encontrado. Diga o nome de um personagem.</p>"
+      section.innerHTML = "<p>Palavras são vento... Diga o nome de um personagem.</p>"
       return
     }
 
@@ -26,7 +26,7 @@ function pesquisar() {
         resultados += `
         <div class="item-resultado">
           <h2>
-            <a href="" target="_blank">${dado.titulo}</a>
+            <a href="${dado.img}" target="_blank">${dado.titulo}</a>
           </h2>
           <p class="descricao-meta">${dado.descricao}</p>
           <a href=${dado.link} target="_blank">Mais informações.</a>
